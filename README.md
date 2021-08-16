@@ -25,11 +25,11 @@ absolutely check out if you are curious, but is not necessary.
 What you do need to know is that the `turn` method takes a `Direction`
 enum- which does not yet exist. Know that when you eventually do 
 create this enum, the order of the enumerables matters. **Right, Down,
-Left, Up. Counter-clockwise from RIGHT.**
+Left, Up. Clockwise from RIGHT.**
 
 You will be writing the logic for the `MazeSolver` in the `move()` 
-method. This method also has two guard clauses, which must come before
-any other movement logic.
+method. This method also has the two following guard clauses, which must come before
+any other movement logic:
 
 ```java
 if (crashCheck()) return
@@ -71,5 +71,5 @@ it is facing.
     
 ## A Completed Project Will
 
-Display the cart travelling through the maze, without colliding with
+Display the cart traveling through the maze, without colliding with
 any walls.
