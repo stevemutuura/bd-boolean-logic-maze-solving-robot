@@ -1,7 +1,3 @@
-# Address code changes needed!
-- S3M1 (adding the mock)
-- S3M3 (adding the UPDATED randomize pins method)
-
 # Maze Solving Robot
 
 This project is a simulation of a beginner robotics project where
