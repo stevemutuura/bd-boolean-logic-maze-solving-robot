@@ -49,7 +49,7 @@ this time and so the `move` method is temporarily halted.
 # Your Task
 
 First create an enum inside of the `MazeSolver` class named `Direction`.
-This enum must have the members RIGHT, DOWN, LEFT, UP in that order. The
+This enum must have the members LEFT, DOWN, RIGHT, UP in that order. The
 turning logic uses the ordinal of each enum to decide which direction to
 turn.
 
