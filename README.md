@@ -24,8 +24,8 @@ absolutely check out if you are curious, but is not necessary.
 
 What you do need to know is that the `turn` method takes a `Direction`
 enum- which does not yet exist. Know that when you eventually do 
-create this enum, the order of the enumerables matters. **Right, Down,
-Left, Up. Clockwise from RIGHT.**
+create this enum, the order of the enumerables matters. **Left, Down,
+Right, Up. Clockwise from RIGHT.**
 
 You will be writing the logic for the `MazeSolver` in the `move()` 
 method. This method also has the two following guard clauses, which must come before
