@@ -20,6 +20,13 @@ public class MazeSolver {
 
     //Define the Distance enum here
 
+    public enum Direction {
+        LEFT,
+        DOWN,
+        RIGHT,
+        UP
+    }
+
     public MazeSolver(PVector position, Direction direction) {
         this.position = position;
 
@@ -68,9 +75,18 @@ public class MazeSolver {
         if (smoothTurning()) return;
 
         // Put your maze-solving logic below this line:
+        if (distanceSensors.x > 12) {
+            moveForward();
+        } else if (distanceSensors.y > 48) {
+            turn(Direction.LEFT);
+        } else {
+            turn(Direction.RIGHT);
+        }
+
+        moveForward();
     }
 
-    public void moveForward() {
+    public void moveForward()  {
         position.add(PVector.fromAngle(angle));
     }
 
